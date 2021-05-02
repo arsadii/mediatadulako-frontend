@@ -11,9 +11,9 @@
 
     <title>Media Tadulako</title>
 </head>
-<body class='bg-gray-200'>
+<body class='flex flex-col items-center w-screen bg-gray-200'>
     {{-- Section Sosmed Atas --}}
-    <div class="flex items-center justify-center text-white bg-gray-900 h-14">
+    <div class="flex items-center justify-center w-full text-white bg-gray-900 h-14">
         <div class="flex items-center justify-between w-4/5">
             <div class="flex">
                 <h1>F</h1>
@@ -27,10 +27,10 @@
         </div>
     </div>
 
-    <div class="flex items-center justify-center h-32 overflow-hidden bg-white">
-        <div class="flex w-4/5 ">
-            <div class="h-16 overflow-hidden">
-                <img class='h-32 overflow-hidden' src="/img/logo.png" alt="">
+    <div class="flex items-center justify-center w-4/5 h-32 overflow-hidden bg-indigo-900">
+        <div class="flex justify-center w-full ">
+            <div class="flex items-end h-16 overflow-hidden">
+                <img class='h-36' src="/img/logo.png" alt="">
             </div>
         </div>
     </div>

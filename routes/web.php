@@ -20,3 +20,11 @@ Route::get('/', function () {
 Route::get('/berita', function() {
     return view('news');
 });
+
+Route::get('/tentang', function() {
+    return view('about');
+});
+
+Route::get('/kontak', function() {
+    return view('contact');
+});
