@@ -15,21 +15,21 @@
 <body class='flex flex-col items-center w-screen bg-gray-200'>
 
     {{-- Section Sosmed Atas --}}
-    <div class="flex items-center justify-center w-full text-white bg-gray-900 h-14">
-        <div class="flex items-center justify-between w-4/5">
+    <div class="flex items-center justify-between w-full p-2 text-white bg-gray-900 sm:justify-center h-14">
+        <div class="flex items-center justify-between w-full sm:w-4/5">
             <div class="flex">
                 <h1>F</h1>
                 <h1>T</h1>
                 <h1>Y</h1>
             </div>
-            <div class ='flex text-xs font-normal'>
-                <h1 class='mr-6' >+11 222 3333 44444</h1>
+            <div class ='flex flex-col text-xs font-normal text-right sm:flex-row'>
+                <h1 class='sm:mr-6' >+11 222 3333 44444</h1>
                 <h1 > support@animediatadulako.com</h1>
             </div>
         </div>
     </div>
 
-    <div class="flex items-center justify-center w-4/5 h-32 overflow-hidden bg-indigo-900">
+    <div class="flex items-center justify-center w-full h-32 overflow-hidden bg-indigo-900 sm:w-4/5">
         <div class="flex justify-center w-full ">
             <div class="flex items-end h-16 overflow-hidden">
                 <img class='h-36' src="/img/logo.png" alt="">
@@ -41,9 +41,9 @@
     <div class="flex flex-col items-center justify-center">
 
         {{-- Nav --}}
-        <div class="sticky w-4/5 px-8 py-5 bg-gray-900">
-            <nav class='flex items-center justify-between text-xs text-white'>
-                <ul class='flex space-x-10'>
+        <div class="flex w-full px-8 py-5 bg-gray-900 sm:w-4/5">
+            <nav class='flex flex-col items-center justify-between w-full space-y-2 text-xs text-white sm:space-y-0 sm:flex-row'>
+                <ul class='flex flex-col space-y-2 text-center sm:space-y-0 sm:space-x-10 sm:flex-row'>
                     <li>
                         HOME
                     </li> 
@@ -64,7 +64,7 @@
                     </li>
                 </ul>
 
-                <div class="text-gray-800">
+                <div class="text-gray-800 ">
                     <input type="text" placeholder='Search' class='w-64 p-2'>
                 </div>
             </nav>
@@ -72,19 +72,20 @@
 
         {{-- Section Hero --}}
 
-        <div class="w-4/5 mt-2">
+        <div class="w-full mt-2 sm:w-4/5">
             <div class="relative w-full h-64 overflow-hidden">
                 <div style='background-color: rgba(0,0,0,0.500)' class="absolute flex items-center justify-center w-full h-full">
-                    <h1 class='text-6xl font-bold text-white'>Tentang Kami</h1>
+                    <h1 class='text-3xl font-bold text-white sm:text-6xl '>Tentang Kami</h1>
                 </div>
-                <div class="">
-                    <img src="/img/image.jpg" alt="">
+                <div class="flex items-center justify-center w-full h-full overflow-hidden">
+                    <img src="/img/image.jpg" class='min-h-full' alt="">
                 </div>
             </div>
         </div>
 
+
         {{-- Section 3 Unggulan --}}
-        <div class="grid w-4/5 grid-cols-3 gap-10 my-24">
+        <div class="grid w-4/5 grid-rows-3 gap-10 my-24 sm:grid-rows-1 sm:grid-cols-3">
             <div class="flex flex-col items-center">
                 <div class="flex items-center justify-center w-1/5 p-4 mb-5 bg-indigo-900 rounded">
                     <img src="/icon/chat.svg" class='w-20' alt="">
@@ -110,15 +111,15 @@
 
         {{-- Section Unggulan dengan Gambar --}}
 
-        <div class="flex bg-white" style='height : 500px'>
-            <div class="flex w-1/2 overflow-hidden">
-                <img src="/img/image.jpg" class='min-w-full' alt="">
+        <div class="flex flex-col h-auto bg-white sm:flex-row">
+            <div class="flex items-center justify-center w-full overflow-hidden sm:w-1/2">
+                <img src="/img/image.jpg" class='min-h-full sm:min-w-full' alt="">
             </div>
-            <div class="w-1/2 p-10">
+            <div class="w-full p-10 sm:w-1/2">
                 <h1 class='mb-10 text-3xl font-bold text-gray-800'>Lorem ipsum dolor sit amet.</h1>
                 <p class='text-gray-500 '>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio doloremque dolore ipsum ratione quisquam, qui animi. Aliquid ea sunt esse quod quis fuga tempora dolores voluptates recusandae eveniet commodi, ipsum quaerat voluptatum facilis ipsa accusantium praesentium, fugiat tempore assumenda voluptas.</p>
 
-                <div class="flex mt-10">
+                <div class="flex flex-col mt-10 space-y-10 sm:space-y-0 sm:flex-row">
                     <div class="flex flex-col">
                         <div class="flex items-center justify-center w-1/5 p-4 mb-5 bg-indigo-900 rounded">
                             <img src="/icon/secure.svg" class='w-20' alt="">
@@ -139,25 +140,25 @@
 
         {{-- Section dengan video --}}
 
-        <div class="w-4/5 mt-20">
+        <div class="w-4/5 mt-20 ">
             <h1 class='text-4xl font-bold text-center text-gray-800'>Goals to Achieve for the leadership</h1>
 
-            <div class='grid grid-cols-2 gap-5 mt-10'>
+            <div class='grid grid-rows-2 gap-5 mt-10 sm:grid-rows-1 sm:grid-cols-2'>
                 <div class="flex flex-col justify-around h-full">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eaque eligendi soluta. Doloremque tenetur unde repudiandae dolores id accusantium aspernatur vel earum nulla saepe non praesentium, magnam officia in quis vero, rerum culpa libero officiis perferendis vitae consequatur quisquam. Perspiciatis incidunt sit possimus tempora veritatis autem vel quia a delectus.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur eaque eligendi soluta. Doloremque tenetur unde repudiandae dolores id accusantium aspernatur vel earum nulla saepe non praesentium, magnam officia in quis vero, rerum culpa libero officiis perferendis vitae consequatur quisquam. Perspiciatis incidunt sit possimus tempora veritatis autem vel quia a delectus.</p>
                     
                 </div>
-                <div class="h-full">
-                    <iframe class='w-full h-96' src="https://www.youtube.com/embed/vzKuIRYpum4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="sm:h-full">
+                    <iframe class='w-full h-48 sm:h-96' src="https://www.youtube.com/embed/vzKuIRYpum4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
 
         {{-- Footer --}}
         <div class="flex flex-col items-center justify-center w-full mt-40 text-white bg-gray-900">
-            <div class="grid w-4/5 grid-cols-4 pt-40 pb-10">
-                <div class="">
+            <div class="grid w-4/5 grid-rows-4 pt-20 pb-10 sm:pt-40 sm:grid-rows-1 sm:grid-cols-4">
+                <div class="mb-5">
                     <h1 class='mb-5 text-xl font-bold'>Berita Teratas</h1>
                     <div class="flex flex-col space-y-3 font-light opacity-80">
                         <a href="">Managed Website</a>
@@ -166,7 +167,7 @@
                         <a href="">Marketing Service</a>
                     </div>
                 </div>
-                <div class="">
+                <div class="mb-5">
                     <h1 class='mb-5 text-xl font-bold'>Quick Links</h1>
                     <div class="flex flex-col space-y-3 font-light opacity-80">
                         <a href="">Jobs
@@ -175,7 +176,7 @@
                         <a href="">Terms of Services</a>
                     </div>
                 </div>
-                <div class="">
+                <div class="mb-5">
                     <h1 class='mb-5 text-xl font-bold'>Features</h1>
                     <div class="flex flex-col space-y-3 font-light opacity-80">
                         <a href="">Jobs
@@ -184,7 +185,7 @@
                         <a href="">Terms of Services</a>
                     </div>
                 </div>
-                <div class="">
+                <div class="mb-5">
                     <h1 class='mb-5 text-xl font-bold'>Resources</h1>
                     <div class="flex flex-col space-y-3 font-light opacity-80">
                         <a href="">Guides</a>

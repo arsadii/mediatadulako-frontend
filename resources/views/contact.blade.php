@@ -15,21 +15,21 @@
 <body class='flex flex-col items-center w-screen bg-gray-200'>
 
     {{-- Section Sosmed Atas --}}
-    <div class="flex items-center justify-center w-full text-white bg-gray-900 h-14">
-        <div class="flex items-center justify-between w-4/5">
+    <div class="flex items-center justify-between w-full p-2 text-white bg-gray-900 sm:justify-center h-14">
+        <div class="flex items-center justify-between w-full sm:w-4/5">
             <div class="flex">
                 <h1>F</h1>
                 <h1>T</h1>
                 <h1>Y</h1>
             </div>
-            <div class ='flex text-xs font-normal'>
-                <h1 class='mr-6' >+11 222 3333 44444</h1>
+            <div class ='flex flex-col text-xs font-normal text-right sm:flex-row'>
+                <h1 class='sm:mr-6' >+11 222 3333 44444</h1>
                 <h1 > support@animediatadulako.com</h1>
             </div>
         </div>
     </div>
 
-    <div class="flex items-center justify-center w-4/5 h-32 overflow-hidden bg-indigo-900">
+    <div class="flex items-center justify-center w-full h-32 overflow-hidden bg-indigo-900 sm:w-4/5">
         <div class="flex justify-center w-full ">
             <div class="flex items-end h-16 overflow-hidden">
                 <img class='h-36' src="/img/logo.png" alt="">
@@ -41,9 +41,9 @@
     <div class="flex flex-col items-center justify-center">
 
         {{-- Nav --}}
-        <div class="sticky w-4/5 px-8 py-5 bg-gray-900">
-            <nav class='flex items-center justify-between text-xs text-white'>
-                <ul class='flex space-x-10'>
+        <div class="flex w-full px-8 py-5 bg-gray-900 sm:w-4/5">
+            <nav class='flex flex-col items-center justify-between w-full space-y-2 text-xs text-white sm:space-y-0 sm:flex-row'>
+                <ul class='flex flex-col space-y-2 text-center sm:space-y-0 sm:space-x-10 sm:flex-row'>
                     <li>
                         HOME
                     </li> 
@@ -64,7 +64,7 @@
                     </li>
                 </ul>
 
-                <div class="text-gray-800">
+                <div class="text-gray-800 ">
                     <input type="text" placeholder='Search' class='w-64 p-2'>
                 </div>
             </nav>
@@ -72,34 +72,50 @@
 
         {{-- Section Hero --}}
 
-        <div class="w-4/5 mt-2">
+        <div class="w-full mt-2 sm:w-4/5">
             <div class="relative w-full h-64 overflow-hidden">
                 <div style='background-color: rgba(0,0,0,0.500)' class="absolute flex items-center justify-center w-full h-full">
-                    <h1 class='text-6xl font-bold text-white'>Kontak Kami</h1>
+                    <h1 class='text-3xl font-bold text-white sm:text-6xl '>Kontak Kami</h1>
                 </div>
-                <div class="">
-                    <img src="/img/image.jpg" alt="">
+                <div class="flex items-center justify-center w-full h-full overflow-hidden">
+                    <img src="/img/image.jpg" class='min-h-full' alt="">
                 </div>
             </div>
         </div>
 
-        {{-- Section 3 Unggulan --}}
-        <div class="grid w-4/5 grid-cols-3 gap-10 p-4 mt-10 bg-white rounded">
-            <div class="flex flex-col items-center">
-                <div class="flex items-center justify-center w-1/5 p-4 mb-5 bg-indigo-900 rounded">
-                    <img src="/icon/chat.svg" class='w-20' alt="">
+        {{-- Kontak --}}
+        <div class="grid w-full grid-rows-2 gap-10 p-4 mt-10 bg-white rounded sm:grid-rows-1 sm:grid-cols-3 sm:w-4/5">
+            <div class="grid justify-center grid-rows-3 gap-1">
+                <div class="flex items-start p-3 space-x-6">
+                    <img src="/icon/home.svg" class='w-6' alt="">
+                    <div class="">
+                        <h1 class='mb-2 text-xl font-bold text-gray-800'>Kantor Kami</h1>
+                        <p class='text-sm text-gray-500'>Lorem ipsum dolor sit amet consectetur</p>
+                    </div>
                 </div>
-                <h1 class='mb-4 text-2xl font-bold text-center text-gray-800'>Lorem, ipsum.</h1>
-                <p class='text-center text-gray-600'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora aspernatur temporibus molestiae at ipsum repellat rem quas error fugiat, ea ullam incidunt doloremque nesciunt exercitationem.</p>
+                <div class="flex items-start p-3 space-x-6">
+                    <img src="/icon/email.svg" class='w-6' alt="">
+                    <div class="">
+                        <h1 class='mb-2 text-xl font-bold text-gray-800'>Email Kami</h1>
+                        <p class='text-sm text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</p>
+                    </div>
+                </div> 
+                <div class="flex items-start p-3 space-x-6">
+                    <img src="/icon/phone-call.svg" class='w-6' alt="">
+                    <div class="">
+                        <h1 class='mb-2 text-xl font-bold text-gray-800'>Telephone Kami</h1>
+                        <p class='text-sm text-gray-500'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ipsam.</p>
+                    </div>
+                </div>    
             </div>
             <form action="" class='flex flex-col col-span-2 '>
-                <div class="flex space-x-2">
-                    <div class="flex flex-col items-center w-1/2 space-y-2">
+                <div class="flex flex-col space-y-2 sm:space-y-0 sm:space-x-2 sm:flex-row">
+                    <div class="flex flex-col items-center w-full space-y-2 sm:w-1/2">
                         <input type="text" class='w-full p-3 border border-gray-300' placeholder="Nama">
                         <input type="text" class='w-full p-3 border border-gray-300' placeholder="Email">
                         <input type="text" class='w-full p-3 border border-gray-300' placeholder="Subject">
                     </div>
-                    <div class="flex flex-col items-center justify-between w-1/2">
+                    <div class="flex flex-col items-center justify-between w-full sm:w-1/2">
                         <textarea class='w-full p-3 bg-white border border-gray-300' placeholder="Pesan">
                         </textarea>
                     </div>
@@ -112,8 +128,8 @@
        
         {{-- Footer --}}
         <div class="flex flex-col items-center justify-center w-full mt-40 text-white bg-gray-900">
-            <div class="grid w-4/5 grid-cols-4 pt-40 pb-10">
-                <div class="">
+            <div class="grid w-4/5 grid-rows-4 pt-20 pb-10 sm:pt-40 sm:grid-rows-1 sm:grid-cols-4">
+                <div class="mb-5">
                     <h1 class='mb-5 text-xl font-bold'>Berita Teratas</h1>
                     <div class="flex flex-col space-y-3 font-light opacity-80">
                         <a href="">Managed Website</a>
@@ -122,7 +138,7 @@
                         <a href="">Marketing Service</a>
                     </div>
                 </div>
-                <div class="">
+                <div class="mb-5">
                     <h1 class='mb-5 text-xl font-bold'>Quick Links</h1>
                     <div class="flex flex-col space-y-3 font-light opacity-80">
                         <a href="">Jobs
@@ -131,7 +147,7 @@
                         <a href="">Terms of Services</a>
                     </div>
                 </div>
-                <div class="">
+                <div class="mb-5">
                     <h1 class='mb-5 text-xl font-bold'>Features</h1>
                     <div class="flex flex-col space-y-3 font-light opacity-80">
                         <a href="">Jobs
@@ -140,7 +156,7 @@
                         <a href="">Terms of Services</a>
                     </div>
                 </div>
-                <div class="">
+                <div class="mb-5">
                     <h1 class='mb-5 text-xl font-bold'>Resources</h1>
                     <div class="flex flex-col space-y-3 font-light opacity-80">
                         <a href="">Guides</a>
